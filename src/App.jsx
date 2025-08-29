@@ -208,12 +208,13 @@ const Home = () => {
                 <p
                   className={`text-white/70 text-md leading-relaxed font-serif space-y-2 transition-all duration-700 ease-in-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 >
-                  I'm a passionate full-stack web developer focused on building responsive and user-friendly applications.<br />
-                  I work extensively with React for the frontend and Node.js for the backend.<br />
-                  My strength lies in creating clean UI/UX using Tailwind CSS and modern web standards.<br />
-                  I enjoy solving real-world problems with scalable, maintainable code.<br />
-                  I believe in writing readable, reusable, and efficient code.<br />
-                  Currently, I'm exploring cloud deployment and optimizing performance across stacks.
+                I'm a passionate full-stack web developer focused on building responsive, user-friendly applications.<br />
+                I work extensively with React for the frontend and Node.js for the backend.<br />
+                My strength lies in creating clean, intuitive UI/UX using Tailwind CSS and modern web standards.<br />
+                I enjoy solving real-world problems with scalable and maintainable code.<br />
+                I believe in writing readable, reusable, and efficient code.<br />
+                Currently, I'm exploring cloud deployment and performance optimization across the stack.
+
                 </p>
               </div>
             </div>
