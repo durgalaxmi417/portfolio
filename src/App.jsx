@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HandThumbDownIcon, HandRaisedIcon, ArrowRightEndOnRectangleIcon, ArrowDownIcon } from "@heroicons/react/24/outline";
+import { HandThumbDownIcon, HandRaisedIcon, ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
 import './App.css';
 
 import profileImage from './mymainimage.jpeg';
@@ -46,32 +46,37 @@ const Home = () => {
   const [prevMinutes, setPrevMinutes] = useState("00");
 
   // Timer + Animation
-  useEffect(() => {
-    const animationTimeout = setTimeout(() => setIsVisible(true), 1000);
+      useEffect(() => {
+      const animationTimeout = setTimeout(() => setIsVisible(true), 1000);
 
-    const updateTime = () => {
-      const now = new Date();
-      const hr = String(now.getHours()).padStart(2, "0");
-      const min = String(now.getMinutes()).padStart(2, "0");
-      const sec = String(now.getSeconds()).padStart(2, "0");
+      const updateTime = () => {
+        const now = new Date();
+        const hr = String(now.getHours()).padStart(2, "0");
+        const min = String(now.getMinutes()).padStart(2, "0");
+        const sec = String(now.getSeconds()).padStart(2, "0");
 
-      if (min !== minutes) setPrevMinutes(minutes);
-      if (hr !== hours) setPrevHours(hours);
+        setPrevMinutes((prev) => (min !== prev ? prev : prev));
+        setPrevHours((prev) => (hr !== prev ? prev : prev));
 
-      setHours(hr);
-      setMinutes(min);
-      setSeconds(sec);
-    };
+        setHours(hr);
+        setMinutes(min);
+        setSeconds(sec);
+      };
 
-    const roleInterval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % roles.length);
-    }, 5000);
+      const roleInterval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % roles.length);
+      }, 5000);
 
-    updateTime();
-    const interval = setInterval(updateTime, 20000);
+      updateTime();
+      const interval = setInterval(updateTime, 20000);
 
-    return () => clearInterval(interval);
-  }, [hours, minutes]);
+      return () => {
+        clearInterval(interval);
+        clearInterval(roleInterval);
+        clearTimeout(animationTimeout);
+      };
+    }, []);
+
 
   return (
     <>
