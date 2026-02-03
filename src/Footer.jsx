@@ -4,6 +4,8 @@ import { FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { MdOutlineContactMail } from "react-icons/md";
+import ViewCounter from './viewcounter';
+
 
 const Footer = () => {
   return (
@@ -19,15 +21,15 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 mx-5">
           <PhoneIcon className="w-4 h-4 text-cyan-400" />
-          <p className="text-gray-400 font-serif">+91 9491779518</p>
+          <p className="text-gray-400 font-serif">+91 7032760271</p>
         </div>
         <div className="flex items-center gap-2 mx-5">
           <MdOutlineMail className="w-4 h-4 text-cyan-400" />
-          <p className="text-gray-400 font-serif">kandhulamanojkumar663@gmail.com</p>
+          <p className="text-gray-400 font-serif">durgalaxmi417@gmail.com</p>
         </div>
         <div className="flex items-center gap-2 mx-5">
           <FaRegCircleUser className="w-4 h-4 text-cyan-400" />
-          <p className="text-gray-400 italic">Manojkumar</p>
+          <p className="text-gray-400 italic">Durga Lakshmi</p>
         </div>
       </div>
 
@@ -58,6 +60,7 @@ const Footer = () => {
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="h-5 w-5 hover:text-blue-300" />
         </a>
+        <ViewCounter />
       </div>
     </div>
   );

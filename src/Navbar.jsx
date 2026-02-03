@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profileImage from "./1711643214041.jpg";
+import profileImage from "./mymainimage.jpeg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,13 +13,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[70%] 
+    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] md:w-[90%] 
                     border border-white/10 shadow-xl backdrop-blur-xl rounded-3xl 
                     bg-[#0a0a23]/90 transition-all duration-300 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
         {/* Logo */}
         <div className="text-white text-xl font-bold">
-          Manoj<span className="text-cyan-400">.Dev</span>
+          Durga Lakshmi<span className="text-[#0fe2f2]">.Dev</span>
         </div>
 
         {/* Hamburger Button (Mobile) */}
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li key={item.name}>
               <a
                 href={`#${item.name.toLowerCase()}`}
-                className="block px-4 py-2 rounded-xl transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+                className="block px-4 py-2 rounded-xl transition duration-300 hover:bg-white/10 hover:text-[#7830e1]"
               >
                 {item.name}
               </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#0a0a23] text-white shadow-lg transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#1b394d] text-white shadow-lg transform transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -80,7 +80,7 @@ const Navbar = () => {
               <a
                 href={`#${item.name.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 px-2 py-1 rounded-lg transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+                className="flex items-center gap-3 px-2 py-1 rounded-lg transition duration-300 hover:bg-white/10 hover:text-[#7830e1]"
               >
                 <span>{item.icon}</span>
                 {item.name}

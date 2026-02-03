@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Change arrow color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0fe2f2 !important;
+}
+
+/* Make the buttons rounded */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle background */
+  backdrop-filter: blur(4px);
+  border: 1px solid #0fe2f2;
+}
+
+/* Center the arrow inside circle */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #0fe2f2;
+  color: #000 !important;
+  box-shadow: 0 0 15px #0fe2f2;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    svg {
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+        transform-origin: center;
+        fill: currentColor;
+        pointer-events: none;
+    }
+}
