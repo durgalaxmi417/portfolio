@@ -28,14 +28,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 
-
+const roles = ["B. Durga Lakshmi", "Full Stack Developer"];
 
 const Home = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
   // Updated roles with your real name
-  const roles = ["B. Durga Lakshmi", "Full Stack Developer"];
+  
   const [index, setIndex] = useState(0);
 
   const [hours, setHours] = useState("00");
@@ -145,11 +145,23 @@ const Home = () => {
               <h3 className="text-white text-lg font-semibold flex items-center gap-2">Resume <HandThumbDownIcon className="w-3 h-4 text-[#0fe2f2]" /></h3>
 
               <div className="flex flex-wrap gap-4">
-                <a href="/resume.pdf" target="_blank" className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 hover:bg-white/20 transition">
+                <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 hover:bg-white/20 transition"
+>
+
                   View Resume <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-[#0fe2f2]" />
                 </a>
 
-                <a href="/resume.pdf" download className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 hover:bg-white/20 transition">
+                <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 hover:bg-white/20 transition"
+>
+
                   Download Resume <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-[#0fe2f2]" />
                 </a>
               </div>
