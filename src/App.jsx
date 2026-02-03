@@ -118,9 +118,9 @@ const Home = () => {
 
               {/* SOCIAL ICONS */}
               <div className="flex-1 flex flex-row flex-wrap space-x-4 mt-4">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener"><FaInstagram className="w-6 h-7 text-[#0fe2f2]" /></a>
-                <a href="https://www.linkedin.com/in/b-durga-lakshmi-ba743860" target="_blank" rel="noopener"><FaLinkedin className="w-6 h-7 text-[#0fe2f2]" /></a>
-                <a href="https://github.com/Durgalakshmivulcan" target="_blank" rel="noopener"><FaGithubSquare className="w-6 h-7 text-[#0fe2f2]" /></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram className="w-6 h-7 text-[#0fe2f2]" /></a>
+                <a href="https://www.linkedin.com/in/b-durga-lakshmi-ba743860" target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-6 h-7 text-[#0fe2f2]" /></a>
+                <a href="https://github.com/Durgalakshmivulcan" target="_blank" rel="noopener noreferrer"><FaGithubSquare className="w-6 h-7 text-[#0fe2f2]" /></a>
                 <a href="mailto:durgalaxmi417@gmail.com"><HiOutlineMailOpen className="w-6 h-7 text-[#0fe2f2]" /></a>
                 <a href="tel:+917032760271"><MdPhoneMissed className="w-6 h-7 text-[#0fe2f2]" /></a>
               </div>
